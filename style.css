@@ -453,7 +453,7 @@ body {
 
 .wrapper section.portfolia .portfolio-part .overlay-slide {
     position: absolute;
-    background: rgba(24, 234, 199, 0.95) none repeat scroll 0 0;
+    background: rgba(255, 187, 180, 0.8) none repeat scroll 0 0;
     width: 100%;
     height: 100%;
     top: 0;
@@ -491,7 +491,7 @@ body {
 }
 
 div.wrapper section.portfolia div.penination p {
-    background: #0ceac5 none repeat scroll 0 0;
+    background: #d36356 none repeat scroll 0 0;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -817,7 +817,7 @@ div.wrapper section.portfolia div.penination a{
 }
 
 .wrapper section.contact .contact-form input[type="submit"] {
-    background: #0ceac5 none repeat scroll 0 0;
+    background: #d36356 none repeat scroll 0 0;
     border: medium none;
     border-radius: 25px / 30px;
     color: #fff;
