@@ -171,7 +171,7 @@ body {
 }
 
 .wrapper header.header .another-text h3 {
-    color: #455a64;
+    color: #d36356;
     font-family: "Raleway", sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -191,7 +191,7 @@ body {
 }
 
 .wrapper header.header .another-text p {
-    color: #78909c;
+    color: #5c2626;
     font-family: "Raleway", sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -233,8 +233,8 @@ body {
 }
 
 .wrapper section.development .design-development i {
-    font-size: 41px;
-    background: #f48fb1;
+    font-size: 61px;
+    background: #ee8c81;
     color: #fff;
     padding: 30px;
     border-radius: 50%;
@@ -242,48 +242,48 @@ body {
 }
 
 .wrapper section.development .design-development i::after {
-    border: 1px solid #f48fb1;
+    border: 1px solid #ce766c;
     content: "";
-    height: 120px;
+    height: 140px;
     left: -10px;
     position: absolute;
     top: -10px;
-    width: 120px;
-    border-radius: 50%;
-}
-
-.wrapper section.development .design-development i::before {
-    border: 1px solid #f48fb1;
-    content: "";
-    height: 140px;
-    left: -20px;
-    position: absolute;
-    top: -20px;
     width: 140px;
     border-radius: 50%;
 }
 
+.wrapper section.development .design-development i::before {
+    border: 1px solid #ce766c;
+    content: "";
+    height: 160px;
+    left: -20px;
+    position: absolute;
+    top: -20px;
+    width: 160px;
+    border-radius: 50%;
+}
+
 .wrapper section.development .design-development.one i {
-    background: #0ceac5;
+    background: #caa37d;
 }
 
 .wrapper section.development .design-development.one i::after,
 .wrapper section.development .design-development.one i::before {
-    border: 1px solid #0ceac5;
+    border: 1px solid #b08e6d;
 }
 
 .wrapper section.development .design-development.three i {
-    background: #82b1ff;
+    background: #cd3c33;
 }
 
 .wrapper section.development .design-development.three i::after,
 .wrapper section.development .design-development.three i::before {
-    border: 1px solid #82b1ff;
+    border: 1px solid #cd3c33;
 }
 
 .wrapper section.development .design-development h2 {
     position: relative;
-    color: #455a64;
+    color: #5c2526;
     font-family: "Raleway", sans-serif;
     font-size: 25px;
     font-weight: 700;
@@ -319,6 +319,7 @@ body {
     position: relative;
     height: 400px;
     overflow: hidden;
+	border-radius: 20px;
 }
 
 .wrapper section.works .work-images img {
@@ -366,7 +367,8 @@ body {
 }
 
 .wrapper section.works .work-images .overlay-text {
-    background: rgba(24, 234, 199, 0.95) none repeat scroll 0 0;
+    background: rgba(255, 187, 180, 0.8) none repeat scroll 0 0;
+	border-radius: 20px;
     height: 100%;
     padding-top: 155px;
     position: absolute;
@@ -883,4 +885,10 @@ div.wrapper section.portfolia div.penination a{
     font-weight: 600;
     color: #4c797d;
     text-decoration: none;
+}
+#underlayer{
+	z-index: -10;
+	height: 100%;
+	width: 100%;
+	background-color: #f7f4ef;
 }
