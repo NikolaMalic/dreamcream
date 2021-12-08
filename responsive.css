@@ -259,6 +259,8 @@
 		}
 		.wrapper header.header ul.nav.navbar-nav{
 			padding-bottom: 0px;
+			background-color: #f7f4ef;
+			border-radius: 30px;
 		}
 		.wrapper header.header ul.nav.navbar-nav li a{
 			font-size: 22px;
@@ -298,6 +300,7 @@
         .wrapper header.header .another-text h3 {
             font-size: 33px;
             padding-bottom: 3px;
+			margin-top: 60px;
         }
         .wrapper header.header .another-text p {
             line-height: 20px;
@@ -310,17 +313,17 @@
         }
         .wrapper section.development {
             padding-top: 30px;
-            padding-bottom: 170px;
+            padding-bottom: 177px;
         }
         .wrapper section.development {
             height: auto;
             overflow: hidden;
         }
         .wrapper section.development .white {
-            bottom: -100px;
+            bottom: -103px;
         }
         .wrapper section.development .blue {
-            bottom: -90px;
+            bottom: -93px;
         }
         .wrapper section.works .work-text {
             margin-left: 0px;
