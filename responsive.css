@@ -243,13 +243,25 @@
     }
     
     @media (max-width: 767px){
+		.wrapper header.header .header-text h1::before{
+			left: 85px;
+		}
+		.wrapper header.header{
+			background: url("img/backgrounddd.jpg");
+		}
+		.wrapper section.works .work-text-full{
+			height: 330px;
+			margin: 0px auto;
+		}
 		.col-md-9.col-sm-9.col-xs-13{
 			top: -48px;
 			left: -10px;
 			float: left;
 		}
 		.another-text{
-			padding-top: 100px;
+			position: absolute;
+			left: 12px;
+			bottom: -238px;
 		}
 		.navbar-nav{
 			margin: 0px;
