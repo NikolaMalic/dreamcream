@@ -43,11 +43,11 @@
                     <div class="col-md-9 col-sm-9 col-xs-13">
                         <div class="menu">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">About</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li class="active"><a href="https://nikolamalic.github.io/pages/about.html">About</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -56,9 +56,16 @@
                     <div class="col-md-12">
                         <div class="header-text">
                             <h1>The Dream Cream</h1>
-                            <p>Ice cream cravings can strike anytime, anyplace. That's why we've created a new way to deliver your frozen fix. The Ice Cream Shop is here to deliver exactly what you want, when you want it. Just log onto your favorite delivery app, order and enjoy!</p>
-                            <button>Read More</button>
-                            <button>Explore</button>
+                            <p>
+							Ice cream cravings can strike anyplace, anytime. 
+							That's why we've created a new way to deliver your frozen fix. 
+							The Ice Cream Shop is here to deliver
+								<span id="dots">...</span>
+								<span id="readmore">exactly what you want, when you want it. 
+							Just log onto your favorite delivery app, order and enjoy!</span>
+							</p>
+							<button id="btn" onclick="reveal()">Read More</button>
+							<a href="#features" target="_parent"><button>Explore</button></a>
                         </div>
                     </div>
                 </div>
@@ -71,6 +78,7 @@
             </div>
         </header>
         <section class="development">
+		<a id="features"></a>
             <div class="blue">
                 <img src="img/development-shepe-blue.png" alt="">
             </div>
@@ -109,11 +117,9 @@
                     <div class="col-md-7">
                         <div class="work-images">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7gJIyHnD710" frameborder="0" allowfullscreen></iframe>
-                            <div class="overlay-text">
+                            <div class="overlay-text" onclick="disappear()">
                                 <i class="material-icons">play_circle_filled</i>
                             </div>
-
-
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -132,6 +138,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="port-text">
+							<a id="menu"></a>
                             <h2>Check out our menu!</h2>
                             <p>More flavours included in the expanded menu</p>
                         </div>
@@ -160,7 +167,7 @@
                         <div class="portfolio-part">
                             <img src="img/portfolio-image3.jpg" alt="">
                             <div class="overlay-slide">
-                                <h2>Oreo and Cream</h2>
+                                <h2>Chocolate-Flake Raspberry</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
                             </div>
                         </div>
@@ -187,16 +194,45 @@
                         <div class="portfolio-part">
                             <img src="img/portfolio-image6.jpg" alt="">
                             <div class="overlay-slide">
-                                <h2>Scotch Vanilla</h2>
+                                <h2>Oreo and Cream</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
                             </div>
                         </div>
                     </div>
+					<span id="newhidden">
+						<div class="col-md-4 col-sm-6">
+							<div class="portfolio-part">
+								<img src="img/portfolio-image7.jpg" alt="">
+								<div class="overlay-slide">
+                                <h2>Mango Banana</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+							</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="portfolio-part">
+								<img src="img/portfolio-image8.jpg" alt="">
+								<div class="overlay-slide">
+									<h2>Scotch Vanilla</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="portfolio-part">
+								<img src="img/portfolio-image9.jpg" alt="">
+								<div class="overlay-slide">
+									<h2>Pistachio Avocado</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+								</div>
+							</div>
+						</div>
+					</span>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="penination">
-                            <a href="#"><p>More Works</p></a>
+                            <button id="btn1" onclick="extracream()">More Flavours</button>
                         </div>
                     </div>
                 </div>
@@ -207,6 +243,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="team-text">
+						<a id="team"></a>
                             <h2>Our Team!</h2>
                             <p>Meet Our Awesome Team. Lorem Ipsum dolor sit amet <br> Hola amigos como estas!</p>
                         </div>
@@ -285,6 +322,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="contact-text">
+						<a id="contact"></a>
                             <h2>Contact US!</h2>
                             <p>Meet Our Awesome Team. Lorem Ipsum dolor sit amet Hola amigos como estas!</p>
                         </div>
@@ -375,10 +413,7 @@
         </footer>
 		</div>
     </div>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/active.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
