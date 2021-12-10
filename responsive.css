@@ -243,6 +243,9 @@
     }
     
     @media (max-width: 767px){
+		#features{
+			top: -110px;
+		}
 		.wrapper header.header .header-text h1::before{
 			left: 85px;
 		}
@@ -261,7 +264,7 @@
 		.another-text{
 			position: absolute;
 			left: 12px;
-			bottom: -238px;
+			top: 648px;
 		}
 		.navbar-nav{
 			margin: 0px;
@@ -367,10 +370,10 @@
             margin-top: 0px;
         }
         .wrapper section.contact .blue {
-            bottom: -155px;
+            bottom: -170px;
         }
         .wrapper section.contact .white {
-            bottom: -135px;
+            bottom: -150px;
         }
         .wrapper footer.footer {
             height: auto;
