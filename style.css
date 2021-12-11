@@ -231,7 +231,10 @@ body {
     text-align: center;
     padding-top: 50px
 }
-
+.wrapper section.development .design-development:hover{
+	transition: transform 330ms ease-in-out;
+	-webkit-transform: scale(1.2);
+}
 .wrapper section.development .design-development i {
     font-size: 61px;
     background: #ee8c81;
@@ -901,4 +904,14 @@ div.wrapper section.portfolia div.penination a{
 }
 #newhidden{
 	display: none;
+}
+@-webkit-keyframes flyin {
+    from {
+        opacity: 1;
+  -webkit-transform: scale(1.4);
+}    
+   to { 
+     -webkit-transform: scale(1);
+     opacity: 0;
+   }
 }
