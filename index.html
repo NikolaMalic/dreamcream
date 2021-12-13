@@ -10,16 +10,39 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 	<link rel="shortcut icon" href="img/icon.ico">
 	<meta name="viewport" content="width=700">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div class="wrapper">
+	<div class="wrapper">
+		<div id="popup" class="modal-box" style="top: 145px; display: none;">
+			<header>
+				<a href="#" class="js-modal-close close">×</a>
+				<h3>Nikola Malić 46/20</h3>
+			</header>
+			<div class="modal-body">
+				<img src="img/myimage.jpg" alt="autor">
+				<p>
+					Hi random viewer!
+					You may be wondering who this handsome fella in the picture on
+					the left is, but that question has already been answered in the
+					title above if you happened to miss it. I'm a 19 year old guy
+					from Serbia that is currently attending ICT college of applied
+					studies in Belgrade. I went to the elementary school of Starina
+					Novak, finished it in 2016 and afterwards graduated at the 14th
+					Belgrade Gymnasium in 2020.
+					My career goals are tied to being a successful (Web) Designer /
+					Programmer. My hobbies are photoshopping, computer and mobile
+					phone hardware alongside mindlessly scrolling through memes on
+					social media for several hours a day. If you're still reading
+					this far, you definitely deserve a cookie.
+				</p>
+			</div>
+		</div>
 		<div id="underlayer">
         <header class="header">
             <div class="blue">
@@ -29,12 +52,6 @@
                 <img src="img/header-shepe-white.png" alt="">
             </div>
             <div class="container">
-                <img class="shepe1" src="img/shepe1.png" alt="">
-                <img class="shepe2" src="img/shepe2.png" alt="">
-                <img class="shepe3" src="img/shepe2.png" alt="">
-                <img class="shepe4" src="img/shepe2.png" alt="">
-                <img class="shepe5" src="img/shepe1.png" alt="">
-                <img class="shepe6" src="img/shepe2.png" alt="">
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="logo">
@@ -44,7 +61,7 @@
                     <div class="col-md-9 col-sm-9 col-xs-13">
                         <div class="menu">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="https://nikolamalic.github.io/pages/about.html">About</a></li>
+                                <li class="active"><a class="js-open-modal" href="#" data-modal-id="popup">AUTHOR</a></li>
                                 <li><a href="#features">Features</a></li>
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#team">Team</a></li>
@@ -92,7 +109,7 @@
                         <div class="design-development one">
                             <i class="material-icons">icecream</i>
                             <h2>Flavor Variety</h2>
-                            <p>Between the wide range of flavors such as raspberry, mango, pistacchio and avocado it's hard to choose. The traditional flavors are here too, but the exotic ones are the most searched.</p>
+                            <p>Between the wide range of flavors such as raspberry, mango, pistacchio and avocado it's hard to choose. The traditional flavors are here too, but the exotic ones are the most seeked for.</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
@@ -115,6 +132,7 @@
             </div>
         </section>
         <section class="works">
+		<a id="tutorial"></a>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -128,8 +146,8 @@
                     <div class="col-md-5">
                         <div class="work-text-full">
                             <div class="work-text">
-                                <h2>How It Works?</h2>
-                                <p>It's Simple. Check out the video to understand
+                                <h2>How it works?</h2>
+                                <p>It's simple. Check out the video to understand
 								how you can make a variety of ice cream flavors
 								at home without the use of a machine!</p>
                             </div>
@@ -156,28 +174,28 @@
 				<span id="newhidden">
 						<div class="col-md-4 col-sm-6">
 							<div class="portfolio-part">
-								<img src="img/portfolio-image7.jpg" alt="">
+								<img src="img/icecream7.jpg" alt="icecream">
 								<div class="overlay-slide">
 									<h2>Mango Banana</h2>
-									<p>The price per scoop: 180 RSD</p>
+									<p>Price per scoop: 180 RSD</p>
                                 </div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<div class="portfolio-part">
-								<img src="img/portfolio-image8.jpg" alt="">
+								<img src="img/icecream8.jpg" alt="icecream">
 								<div class="overlay-slide">
 									<h2>Scotch Vanilla</h2>
-									<p>The price per scoop: 150 RSD</p>
+									<p>Price per scoop: 150 RSD</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<div class="portfolio-part">
-								<img src="img/portfolio-image9.jpg" alt="">
+								<img src="img/icecream9.jpg" alt="icecream">
 								<div class="overlay-slide">
 									<h2>Pistachio Avocado</h2>
-									<p>The price per scoop: 200 RSD</p>
+									<p>Price per scoop: 200 RSD</p>
 								</div>
 							</div>
 						</div>
@@ -196,54 +214,38 @@
                     <div class="col-md-12">
                         <div class="team-text">
 						<a id="team"></a>
-                            <h2>Our Team!</h2>
-                            <p>Meet Our Awesome Team!</p>
+                            <h2>Our team!</h2>
+                            <p>Meet our awesome team!</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="img/team-member1.png" style="width:100%">
-    <div class="text">Liam Wilson</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="img/team-member2.png" style="width:100%">
-    <div class="text">Kimberly Carter</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="img/team-member3.png" style="width:100%">
-    <div class="text">Emma Adams</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="img/team-member4.png" style="width:100%">
-    <div class="text">Mića Radojević</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+								<div class="numbertext">1 / 3</div>
+								<img src="img/worker1.jpg" style="width:100%">
+								<div class="text">Kimberly Carter</div>
+							</div>
+							<div class="mySlides fade">
+								<div class="numbertext">2 / 3</div>
+									<img src="img/worker2.jpg" style="width:100%">
+									<div class="text">Liam Wilson</div>
+								</div>
+							<div class="mySlides fade">
+								<div class="numbertext">3 / 3</div>
+									<img src="img/worker3.jpg" style="width:100%">
+									<div class="text">Emma Adams</div>
+							</div>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br>
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+						</div>
                     </div>
                 </div>
             </div>
@@ -260,7 +262,7 @@
                     <div class="col-md-4 col-sm-12">
                         <div class="contact-text">
 						<a id="contact"></a>
-                            <h2>Contact US!</h2>
+                            <h2>Contact us!</h2>
                             <p>Have something to say about our site?
 							Enter your comments and click on the send button.</p>
                         </div>
@@ -272,8 +274,9 @@
                                     <input id="name" type="text" name="Name" placeholder="First Name" required>
 									<span id="name-error"></span>
                                 </div>
-                                <div class="last">
-                                    <input id="last" type="text" name="Last" placeholder="Last Name" required>
+                                <div class="date">
+									<label>Input date:</label>
+                                    <input type="date" id="date" min="2021-12-01" max="2021-12-30">
 									<span id="last-error"></span>
                                 </div>
                                 <div class="email">
@@ -305,7 +308,7 @@
                     <div class="col-md-4 col-sm-12">
                         <div class="footer-icon">
                             <h2>Dream Cream</h2>
-                            <p><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a><a href="#"><i aria-hidden="true" class="fa fa-dribbble"></i></a><a href="#"><i aria-hidden="true" class="fa fa-behance"></i></a><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></p>
+                            <p><a href="#"><i class="material-icons">upload_file</i></a><a href="#"><i aria-hidden="true" class="fa fa-rss"></i></a><a href="#"><i aria-hidden="true" class="fa fa-sitemap"></i></a><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a><a href="#"><i aria-hidden="true" class="fa fa-instagram"></i></a></p>
                             <h5>&copy; All Rights Reserved.</h5>
                         </div>
                     </div>
@@ -315,37 +318,37 @@
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <div class="footer-text-single">
                                         <h3>About Us</h3>
-                                        <p><a href="#">Our Team</a></p>
-                                        <p><a href="#">Company</a></p>
-                                        <p><a href="#">Jobs</a></p>
-                                        <p><a href="#">Newsletter</a></p>
+                                        <p><a href="#team">Our Team</a></p>
+                                        <p><a href="#team">Company</a></p>
+                                        <p><a href="#features">Jobs</a></p>
+                                        <p><a href="#contact">Newsletter</a></p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <div class="footer-text-single">
                                         <h3>Help Center</h3>
                                         <p><a href="#">Documentations</a></p>
-                                        <p><a href="#">Tutorials</a></p>
-                                        <p><a href="#">Term Of Use</a></p>
-                                        <p><a href="#">Privecy Policy</a></p>
+                                        <p><a href="#tutorial">Tutorials</a></p>
+                                        <p><a href="#contact">Terms Of Use</a></p>
+                                        <p><a href="#contact">Privacy Policy</a></p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <div class="footer-text-single">
                                         <h3>Tools</h3>
-                                        <p><a href="#">Create Account</a></p>
-                                        <p><a href="#">Log In</a></p>
-                                        <p><a href="#">Services</a></p>
-                                        <p><a href="#">Sitemap</a></p>
+                                        <p><a href="#contact">Create Account</a></p>
+                                        <p><a href="#contact">Log In</a></p>
+                                        <p><a href="#contact">Services</a></p>
+                                        <p><a href="#contact">Sitemap</a></p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <div class="footer-text-single">
                                         <h3>Get In Touch</h3>
-                                        <p><a href="#">Contact Us</a></p>
-                                        <p><a href="#">Request A Demo</a></p>
-                                        <p><a href="#">+12 323 323 323</a></p>
-                                        <p><a href="#">support@gmail.com</a></p>
+                                        <p><a href="#contact">Contact Us</a></p>
+                                        <p><a href="#contact">Request A Demo</a></p>
+                                        <p><a href="#contact">+12 323 323 323</a></p>
+                                        <p><a href="#contact">support@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
