@@ -243,6 +243,16 @@
     }
     
     @media (max-width: 767px){
+		#contactForm{
+			margin-left: 0px;
+		}
+		#logoanim{
+			width: 45%;
+		}
+		.date{
+			right: -46px;
+			top: 40px;
+		}
 		.modal-box {
 			width: 98%;
 		}
