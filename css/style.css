@@ -645,7 +645,7 @@ div.wrapper section.portfolia div.penination a{
     padding-top: 5px;
 }
 
-.wrapper section.contact .contact-form {
+.wrapper section.contact .contactForm {
     background: #fff none repeat scroll 0 0;
     margin-left: 135px;
     margin-top: 50px;
@@ -654,33 +654,33 @@ div.wrapper section.portfolia div.penination a{
     border-radius: 7px;
 }
 
-.wrapper section.contact .contact-form .first {
+.wrapper section.contact .contactForm .first {
     margin-right: 10%;
     float: left;
 }
 
-.wrapper section.contact .contact-form .last {
+.wrapper section.contact .contactForm .last {
     float: right;
 }
 
-.wrapper section.contact .contact-form .first,
-.wrapper section.contact .contact-form .last {
+.wrapper section.contact .contactForm .first,
+.wrapper section.contact .contactForm .last {
     padding-top: 8px;
     width: 45%;
 }
-.wrapper section.contact .contact-form .date{
+.wrapper section.contact .contactForm .date{
 	float: right;color: #757575;
     font-weight: 600;
     width: 45%;
 }
-.wrapper section.contact .contact-form .date label{
+.wrapper section.contact .contactForm .date label{
 	font-family: "Raleway", sans-serif;
 	font-size: 15px;
 	font-weight: 600;
 }
-.wrapper section.contact .contact-form input {}
+.wrapper section.contact .contactForm input {}
 
-.wrapper section.contact .contact-form input[type="text"] {
+.wrapper section.contact .contactForm input[type="text"] {
     background: transparent none repeat scroll 0 0;
     border-color: -moz-use-text-color -moz-use-text-color #cfd8dc;
     border-image: none;
@@ -706,7 +706,7 @@ div.wrapper section.portfolia div.penination a{
     -o-border-top-colors: none;
 }
 
-.wrapper section.contact .contact-form input[type="email"] {
+.wrapper section.contact .contactForm input[type="email"] {
     background: transparent none repeat scroll 0 0;
     border-color: -moz-use-text-color -moz-use-text-color #cfd8dc;
     border-image: none;
@@ -733,7 +733,7 @@ div.wrapper section.portfolia div.penination a{
     -o-border-top-colors: none;
 }
 
-.wrapper section.contact .contact-form .message textarea {
+.wrapper section.contact .contactForm .message textarea {
     background: transparent none repeat scroll 0 0;
     border-color: -moz-use-text-color -moz-use-text-color #cfd8dc;
     border-image: none;
@@ -761,7 +761,7 @@ div.wrapper section.portfolia div.penination a{
     -o-border-top-colors: none;
 }
 
-.wrapper section.contact .contact-form .checkbox {
+.wrapper section.contact .contactForm .checkbox {
     float: left;
     margin-left: 17px;
     padding-top: 30px;
@@ -771,13 +771,11 @@ div.wrapper section.portfolia div.penination a{
     font-size: 14px;
     font-weight: 600;
 }
-
-.wrapper section.contact .contact-form .submit {
-    float: right;
+.submit{
     padding-top: 25px;
 }
-
-.wrapper section.contact .contact-form input[type="submit"] {
+input[type="submit"] {
+	float: right;
     background: #d36356 none repeat scroll 0 0;
     border: medium none;
     border-radius: 25px / 30px;
@@ -787,8 +785,7 @@ div.wrapper section.portfolia div.penination a{
     font-weight: 600;
     padding: 11px 65px;
 }
-
-.wrapper section.contact .contact-form .checkbox-submit {
+.wrapper section.contact .contactForm .checkbox-submit {
     padding-bottom: 70px;
 }
 
@@ -992,4 +989,60 @@ a.close{
 	top: 2%;
 	right: 2%;
 	font-size: 37px;
+}
+#contactForm{
+	display: flow-root;
+	background: #fff none repeat scroll 0 0;
+    margin-left: 135px;
+    margin-top: 50px;
+    padding: 0px 35px 35px;
+    box-shadow: -9px 1px 15px rgb(0 0 0 / 10%);
+    border-radius: 7px;
+}
+.col-12{
+	background: transparent none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #cfd8dc;
+    border-image: none;
+    border-style: none none solid;
+    color: #404548;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 47px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.first{
+    width: 45%;
+	margin-right: 10%;
+    float: left;
+}
+.date{
+	position: absolute;
+    right: -70px;
+    top: 92px;
+    color: #757575;
+    font-weight: 600;
+    width: 45%;
+}
+.checkbox{
+	float: left;
+    margin-left: 17px;
+    width: 200px;
+    color: #8197a3;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+#message{
+	border-width: medium medium 2px;
+}
+#logoanim{
+	width: 73%;
+	text-decoration: none;
+    color: black;
+    font-size: 4em;
+    border-bottom-color: #5c2526;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
 }
