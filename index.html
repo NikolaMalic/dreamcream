@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="logo">
+                        <div class="logo" id="logoanim">
                             <h2><a href="#">Dream Cream</a></h2>
                         </div>
                     </div>
@@ -269,36 +269,29 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-12">
-                        <div class="contact-form">
-                            <form method="get" onsubmit="return validation()">
-                                <div class="first">
-                                    <input id="name" type="text" name="Name" placeholder="First Name" required>
-									<span id="name-error"></span>
-                                </div>
-                                <div class="date">
+                        <div id="contactForm">
+							<form action="#" method="GET" onsubmit="return formCheck();">
+								<div class="first">
+									<input class="col-12" type="text" id="name" name="name" placeholder="Name*">
+								</div>
+								<div class="date">
 									<label>Input date:</label>
-                                    <input type="date" id="date" min="2021-12-01" max="2021-12-30">
-									<span id="last-error"></span>
-                                </div>
-                                <div class="email">
-                                    <input id="email" type="email" name="Email" placeholder="Email Address" required>
-									<span id="email-error"></span>
-                                </div>
-                                <div class="message">
-                                    <textarea id="textarea" placeholder="Your Message"></textarea>
-                                </div>
-                                <div class="checkbox-submit">
-                                    <div class="checkbox">
-                                        <label><input id="checkbox" type="checkbox" name="Checkbox" checked> Allow Newsletter</label>
+									<input type="date" id="date" min="2021-12-01" max="2021-12-30">
+								</div>
+								<div class="email">
+									<input class="col-12" type="email" id="email" name="email" placeholder="E-Mail*">
+								</div>
+								<div class="message">
+									<textarea class="col-12" name="message" id="message" placeholder="Your Message" rows="4"></textarea>
+								</div>
+								<div class="submit">
+									<div class="checkbox">
+                                        <label><input id="checkbox" type="checkbox" name="Checkbox" checked=""> Allow Newsletter</label>
                                     </div>
-                                    <div class="submit">
-                                        <input type="submit" value="SEND">
-										<span id="confirm"></span>
-                                    </div>
-                                </div>
-                            </form>
-							<div id="error"></div>
-                        </div>
+									<input type="submit" name="send" value="Send">
+								</div>
+							</form>
+						</div>
                     </div>
                 </div>
             </div>
