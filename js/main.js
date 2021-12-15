@@ -90,42 +90,36 @@ icecream.forEach((icecream, id) => {
 	row != null ? row.innerHTML += card : null
 });
 
-function validation(){
 
-    var name1 = document.getElementById('name').value;
-    var last1 = document.getElementById('last').value;
-    var email1 = document.getElementById('email').value;
-    var message1 = document.getElementById('message').value;
+var nameSurnamePattern= /^[A-ZČĆŽŠĐ][a-zčćžš]{1,15}(\s[A-ZČĆŽŠĐ][a-zčćžš]{1,15})+$/;
+var emailPattern = /^\S+@\S+\.\S+$/;
+var messagePattern = /.{5,}/;
 
-    let nameCheck = /^[A-Za-z. ]{5,20}$/;
-    let lastCheck = /^[A-Za-z. ]{5,20}$/;
-    let emailCheck = /^[a-z0-9.]{2,}@[a-z]{2,}[.]{1}[a-z.]{2,6}$/;
-
-    if(nameCheck.test(name1)){
-        document.getElementById('name-error').innerHTML = " ";
-    }
-    else{
-        document.getElementById('name-error').innerHTML = "Incorrect first name input!";
-        return false;
-    }
-    
-	if(lastCheck.test(last1)){
-        document.getElementById('last-error').innerHTML = " ";
-    }
-    else{
-        document.getElementById('last-error').innerHTML = "Incorrect last name input!";
-        return false;
-    }
-	
-    if(emailCheck.test(email1)){
-        document.getElementById('email-error').innerHTML = " ";
-    }
-    else{
-        document.getElementById('email-error').innerHTML = "Incorrect email input!";
-        return false;
-    }
-
-    document.getElementById('confirm').innerHTML = "Your message has been successfully sent!";
+function formCheck(){
+    let firstName = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    firstName.style.borderColor = "#009412";
+    email.style.borderColor = "#009412";
+    message.style.borderColor = "#009412";
+    let noErrors = true;
+        if(!nameSurnamePattern.test(firstName.value)){
+            noErrors = false;
+            firstName.style.borderColor = "red";
+            
+        }
+       
+        if(!emailPattern.test(email.value)){
+            noErrors = false;
+            email.style.borderColor = "red";
+            
+        }
+        if(!messagePattern.test(message.value)){
+            noErrors = false;
+            message.style.borderColor = "red";
+            
+        }
+    return noErrors;
 }
 
 
